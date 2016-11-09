@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>myHome Ethiopia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="angular/angular.min.js"></script>
+	<script src="components/app.js"></script>
+	<script src="components/home.component.js"></script>
+	<script src="components/aboutus.component.js"></script>
+	<script src="components/contactus.component.js"></script>
+	<script src="components/nav.component.js"></script>
+	<script src="components/header.component.js"></script>
+	<script src="components/sidenav.component.js"></script>
+	<script src="components/admin.component.js"></script>
+	<script src="components/post.component.js"></script>
+	
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-alpha.5-dist/ui-bootstrap-tpls-2.2.0.min.js">
+
+	
+</head>
+<body style="background-color: black">
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<div id="container-fluid">
+			<nav-component></nav-component>	
+			<div class="jumbotron text-center">
+			<div class="page-header">
+				<header-component></header-component>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3">
+				<sidenav-component></sidenav-component>
+			</div>
+			<div class="col-sm-8">
+				<div ng-view></div>
+			</div>
+		</div>
+	</div>
+</div>	
+</body>
+</html>

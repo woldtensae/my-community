@@ -1,0 +1,22 @@
+<div>
+	<table>
+	<tr>
+		<td>{{ user }}</td>
+		<td>{{ pass }}</td>
+	</tr>
+	<tr>
+		<td>{{ loginMessage }}</td>
+	</tr>
+		<tr>
+			<td>User Name:</td>
+			<td><input ng-model="user" type="text" id="usern" placeholder="user name"></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input ng-model="pass" type="password" id="passw" placeholder="passowrd"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button ng-click="adminFunction()">Submit</button></td>
+		</tr>
+	</table>
+</div>

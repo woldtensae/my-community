@@ -10,7 +10,7 @@ angular.module('myApp').component('adminComponent',{
 		$http.get("adminAut.php").then(function(response){
 			$scope.adminData = response.data.records;
 			angular.forEach($scope.adminData, function(value, Index){
-			console.log("it is displaying");	
+			//console.log("it is displaying");	
 			if(($scope.user==value.username)&&($scope.pass==value.password)){
 				$scope.userFoundFlag =1;
 				$location.path($scope.url);

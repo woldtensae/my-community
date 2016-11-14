@@ -12,35 +12,43 @@
 	<script src="components/header.component.js"></script>
 	<script src="components/sidenav.component.js"></script>
 	<script src="components/admin.component.js"></script>
-	<script src="components/post.component.js"></script>
-	
+	<script src="components/postMarket.component.js"></script>
+	<script src="components/footer.component.js"></script>
+	<script src="components/news.component.js"></script>
+
 	<script src="bower_components/angular-route/angular-route.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-alpha.5-dist/ui-bootstrap-tpls-2.2.0.min.js">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 
 	
 </head>
-<body style="background-color: black">
+<body style="background-color: white; color: grey">
 	<div ng-app="myApp" ng-controller="myCtrl">
 		<div id="container-fluid">
-			<nav-component></nav-component>	
-			<div class="jumbotron text-center">
-			<div class="page-header">
-				<header-component></header-component>
+				
+			
+			<nav-component></nav-component>
+				<div class="page-header">
+					<header-component></header-component>
+				</div>
+			
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-2">
+					<sidenav-component></sidenav-component>
+				</div>
+				<div class="col-sm-8">
+					<div ng-view></div>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			<div>
+				<footer-component></footer-component>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-1"></div>
-			<div class="col-sm-3">
-				<sidenav-component></sidenav-component>
-			</div>
-			<div class="col-sm-8">
-				<div ng-view></div>
-			</div>
-		</div>
-	</div>
-</div>	
+	</div>	
 </body>
 </html>

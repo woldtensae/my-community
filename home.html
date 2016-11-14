@@ -1,8 +1,14 @@
+		<div class="raw">
+		<div ng-repeat="data in returnedData">			
+				<div class="col-sm-3">
+					<div><img class="round-image" width="200" height="146" src="{{ data.market_pictuer }}"> </div>
+					<h3>{{ data.market_description }}</h3>
+					<p>	{{ data.market_address }} </p>	
+				</div>
+			</div>
+		</div>
 	
-	<div ng-repeat="data in returnedData">
-		<div><h1>{{ data.market_address }}</h1></div>
-		<div>{{ data.market_description }}</div>
-	</div>
+									
 	
 
 	

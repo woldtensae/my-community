@@ -20,5 +20,8 @@ $routeProvider
 	})
 	.when("/post", {
 		template: "<post-component></post-component>"
+	})
+	.when("/news", {
+		template: "<news-component></news-component>"
 	});
 });
